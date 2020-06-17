@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <title>Aggression scorer</title>
+
+    <!-- Load axios for AJAX functionality -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- Load web font and use some css for beautiful design -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap:400,300,600" rel="stylesheet">
+
+    <style>
+        body {
+            line-height: 1.6;
+            font-weight: 400;
+            font-family: "Raleway", sans-serif;
+            color: #200; 
+            padding: 20px;
+            }
+    </style>
+
+</head>
+
+<body>
+    <h1>Aggression scorer frontend</h1>
+    <p>
+        This is the frontend for Section 2 in the course Hands On Machine Learning for .NET Developers. 
+    </p>
+    <p>
+        Make sure that the aggression scorer ASP.Net web api is running before using this.
+    </p>
+    <br/>
+
+    <div style="float: left;">
+        <h2>Comment</h2>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        <br/>
+        
+        <button onclick="sendComment()">Submit</button>
+    </div>
+
+    <div style="float: left; margin-left: 30px;">
+        <h2>Result</h2>
+        <div id="result"></div>
+    </div>
+</body>
+
+<script>
+    function sendComment(){
+
+        // Clear previous result
+        document.getElementById('result').innerHTML = "Sending comment...";
+        
+        // Post the comment to the ASP.Net core Web API and display the result (or error)
+        axios.post('http://localhost:5000/aggressionscore', { 'Comment': document.getElementById('comment').value } )
+            .then((response) => {
+                document.getElementById('result').innerHTML = 'Is Aggressive: <b>' + response.data.isAggressive + '</b><br/> Aggression probability: <b>' + (response.data.probability * 100).toFixed(2)+ '%</b>';
+            }, (error) => {
+                document.getElementById('result').innerText = error;
+            });
+    }
+</script>
+
+</html>

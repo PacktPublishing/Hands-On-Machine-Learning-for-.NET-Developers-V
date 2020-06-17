@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageClassifierTrainer", "ImageClassifierTrainer\ImageClassifierTrainer.csproj", "{11C56DBB-F9AB-452E-8771-EDB472AAD566}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeerkatModel", "MeerkatModel\MeerkatModel.csproj", "{4F3B040C-3E7C-43AC-A31C-49BCB34F8736}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeerkatGUI", "MeerkatGUI\MeerkatGUI.csproj", "{553A508C-4FE3-41BB-91EC-5804E6747CA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11C56DBB-F9AB-452E-8771-EDB472AAD566}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11C56DBB-F9AB-452E-8771-EDB472AAD566}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11C56DBB-F9AB-452E-8771-EDB472AAD566}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11C56DBB-F9AB-452E-8771-EDB472AAD566}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F3B040C-3E7C-43AC-A31C-49BCB34F8736}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F3B040C-3E7C-43AC-A31C-49BCB34F8736}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F3B040C-3E7C-43AC-A31C-49BCB34F8736}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F3B040C-3E7C-43AC-A31C-49BCB34F8736}.Release|Any CPU.Build.0 = Release|Any CPU
+		{553A508C-4FE3-41BB-91EC-5804E6747CA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{553A508C-4FE3-41BB-91EC-5804E6747CA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{553A508C-4FE3-41BB-91EC-5804E6747CA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{553A508C-4FE3-41BB-91EC-5804E6747CA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC0A9D8B-7CC1-4D2D-9FFB-339C041B5F1D}
+	EndGlobalSection
+EndGlobal
